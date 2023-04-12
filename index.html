@@ -1,347 +1,625 @@
 <!DOCTYPE html>
-<html><meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<html>
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-<title>TestEd 2023 - The 2nd Testing Education Workshop</title>
+  <title>TestEd 2023 - The 2nd Testing Education Workshop</title>
 
+  <link
+    rel="shortcut icon"
+    href="https://testedworkshop.github.io/2023/images/favicon.png"
+    type="image/png"
+  />
 
-  <link rel="shortcut icon" href="https://testedworkshop.github.io/2023/images/favicon.png" type="image/png"
-/>
+  <meta name="description" content="The 2nd Testing Education Workshop" />
 
+  <meta
+    name="keywords"
+    content="software engineering, software testing, workshop, education"
+  />
+  <meta name="referrer" content="no-referrer-when-downgrade" />
 
-  <meta name="description" content="The 2nd Testing Education Workshop"
-/>
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <meta name="keywords" content="software engineering, software testing, workshop, education"
-/>
-<meta name="referrer" content="no-referrer-when-downgrade" />
+  <link
+    rel="stylesheet"
+    href="https://testedworkshop.github.io/2023/css/screen.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://testedworkshop.github.io/2023/css/fonts.css"
+    type="text/css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://testedworkshop.github.io/2023/fork-awesome/css/fork-awesome.min.css"
+    type="text/css"
+  />
 
-<meta name="HandheldFriendly" content="True" />
-<meta name="MobileOptimized" content="320" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:title" content="" />
+  <meta
+    property="og:description"
+    content="The 2nd Testing Education Workshop"
+  />
+  <meta property="og:type" content="website" />
+  <meta
+    property="og:url"
+    content="https://testedworkshop.github.io/2023/"
+  /><meta
+    property="og:image"
+    content="https://testedworkshop.github.io/2023/images/gregory-dalleau-KT4dOfvtZSg-unsplash.jpg"
+  /><meta
+    property="og:site_name"
+    content="TestEd 2023 - The 2nd Testing Education Workshop"
+  />
 
-<link rel="stylesheet" href="https://testedworkshop.github.io/2023/css/screen.css" />
-<link rel="stylesheet" href="https://testedworkshop.github.io/2023/css/fonts.css" type="text/css" />
-<link
-  rel="stylesheet"
-  href="https://testedworkshop.github.io/2023/fork-awesome/css/fork-awesome.min.css"
-  type="text/css"
-/>
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    name="twitter:image"
+    content="https://testedworkshop.github.io/2023/images/gregory-dalleau-KT4dOfvtZSg-unsplash.jpg"
+  />
 
-<meta property="og:title" content="" />
-<meta property="og:description" content="The 2nd Testing Education Workshop" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://testedworkshop.github.io/2023/" /><meta property="og:image" content="https://testedworkshop.github.io/2023/images/gregory-dalleau-KT4dOfvtZSg-unsplash.jpg"/><meta property="og:site_name" content="TestEd 2023 - The 2nd Testing Education Workshop" />
+  <meta name="twitter:title" content="" />
+  <meta
+    name="twitter:description"
+    content="The 2nd Testing Education Workshop"
+  />
 
+  <meta itemprop="name" content="" />
+  <meta itemprop="description" content="The 2nd Testing Education Workshop" />
 
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://testedworkshop.github.io/2023/images/gregory-dalleau-KT4dOfvtZSg-unsplash.jpg"/>
+  <style>
+    #site-head {
+      color: #169b62;
+      text-shadow: 1px 1px 4px #fff;
+      background-color: #fff;
+    }
 
-<meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="The 2nd Testing Education Workshop"/>
+    a:hover {
+      color: #169b62;
+    }
 
-<meta itemprop="name" content="">
-<meta itemprop="description" content="The 2nd Testing Education Workshop">
+    a.btn {
+      color: white;
+      background-color: #ff883e;
+      text-shadow: none;
+    }
 
+    a.btn:hover {
+      background-color: #169b62;
+    }
 
+    a.fn-item.active {
+      color: #169b62;
+    }
+    a.fn-item:hover {
+      color: #bbc7cc;
+    }
 
+    .post-holder.odd {
+      background: #ff883e;
+      color: white;
+    }
+    .post-holder {
+      background: #f2efe8;
+    }
+    body {
+      color: #3a4145;
+    }
 
-<style>
+    .site-footer {
+      color: #bbc7cc;
+      background-color: #22343aa7;
+    }
+    .post-content img {
+      max-width: 100px;
+      height: auto;
+      display: inline-block;
+      border-radius: 10%;
+    }
 
-     #site-head {
-          color: #169B62;
-          text-shadow: 1px 1px 4px #FFF;
-          background-color: #FFF;
-     }
+    .blog-title {
+      margin: 10px 0 10px 0;
+      font-size: 8rem;
+      letter-spacing: -1px;
+    }
 
-      
-     a:hover {
-         color: #169B62;
-     }
+    .blog-description {
+      margin: 0;
+      font-size: 3rem;
+      line-height: 2em;
+      font-weight: 500;
+      font-family: 'Roboto Slab', serif;
+    }
 
-     a.btn {
-          color: white;
-          background-color: #FF883E;
-          text-shadow: none;
-     }
+    .blog-subdescription {
+      margin: 0;
+      font-size: 2rem;
+      line-height: 2em;
+      font-weight: 500;
+      font-family: 'Roboto Slab', serif;
+    }
+    .paper {
+      line-height: normal;
+    }
+    .authors {
+      font-style: italic;
+      font-size: small;
+    }
+    .abstract {
+      font-size: small;
+      line-height: normal;
+    }
+  </style>
 
-     a.btn:hover {
-          background-color: #169B62;
-     }
-
-      
-     a.fn-item.active {
-          color: #169B62;
-     }
-     a.fn-item:hover {
-          color: #BBC7CC;
-     }
-
-      
-     .post-holder.odd {
-          background: #FF883E;
-          color: white;
-     }
-     .post-holder {
-          background: #f2efe8;
-     }
-     body {
-          color: #3A4145;
-     }
-
-      
-     .site-footer {
-          color: #BBC7CC;
-          background-color: #22343aa7;
-     }
-     .post-content img{
-          max-width: 100px;
-          height: auto;
-          display: inline-block;
-          border-radius: 10%;
-     }
-
-     .blog-title {
-          margin: 10px 0 10px 0;
-          font-size: 8rem;
-          letter-spacing:-1px;
-     }
-
-     .blog-description {
-          margin: 0;
-          font-size: 3rem;
-          line-height: 2em;
-          font-weight: 500;
-          font-family: "Roboto Slab", serif;
-}
-
-     .blog-subdescription {
-          margin: 0;
-          font-size: 2rem;
-          line-height: 2em;
-          font-weight: 500;
-          font-family: "Roboto Slab", serif;
-     }
-
-</style>
-
-
-
-
-
-
-
-
-
-
-<link
-  rel="apple-touch-icon"
-  sizes="180x180"
-  href="https://testedworkshop.github.io/2023/images/apple-touch-icon.png"
-/>
-<link
-  rel="icon"
-  type="image/png"
-  sizes="32x32"
-  href="https://testedworkshop.github.io/2023/images/favicon-32x32.png"
-/>
-<link
-  rel="icon"
-  type="image/png"
-  sizes="16x16"
-  href="https://testedworkshop.github.io/2023/images/favicon-16x16.png"
-/>
-<body>
-
-
-
-<header id="site-head" style="background-image: url(images/gregory-dalleau-KT4dOfvtZSg-unsplash.jpg)">
-    <div class="vertical">
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="https://testedworkshop.github.io/2023/images/apple-touch-icon.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="https://testedworkshop.github.io/2023/images/favicon-32x32.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="https://testedworkshop.github.io/2023/images/favicon-16x16.png"
+  />
+  <body>
+    <header
+      id="site-head"
+      style="
+        background-image: url(images/gregory-dalleau-KT4dOfvtZSg-unsplash.jpg);
+      "
+    >
+      <div class="vertical">
         <div id="site-head-content" class="inner">
+          <h1 class="blog-title">TestEd</h1>
+          <h2 class="blog-description">
+            The 2nd Software Testing Education Workshop
+          </h2>
+          <h3 class="blog-subdescription">
+            Co-located with
+            <a href="https://conf.researchr.org/home/icst-2023">ICST</a> in
+            Dublin, Ireland<!-- raw HTML omitted -->April 2023
+          </h3>
 
-            <h1 class="blog-title">TestEd</h1>
-            <h2 class="blog-description">The 2nd Software Testing Education Workshop</h2>
-            <h3 class="blog-subdescription">Co-located with <a href="https://conf.researchr.org/home/icst-2023">ICST</a> in Dublin, Ireland<!-- raw HTML omitted -->April 2023</h3>
+          <a class="btn site-menu" data-title-anchor="welcome">Welcome</a>
 
-            
-                 <a class='btn site-menu' data-title-anchor='welcome'>Welcome</a>
-            
-                 <a class='btn site-menu' data-title-anchor='call-for-contributions'>Call for Contributions</a>
-            
-                 <a class='btn site-menu' data-title-anchor='organisation'>Organisation</a>
-            
-                 <a class='btn site-menu' data-title-anchor='registration'>Registration</a>
-            
-                 <a class='btn site-menu' data-title-anchor='series'>Series</a>
-            
-            <i id='header-arrow' class="fa fa-angle-down"></i>
+          <a class="btn site-menu" data-title-anchor="program">Program</a>
+
+          <a class="btn site-menu" data-title-anchor="call-for-contributions"
+            >Call for Contributions</a
+          >
+
+          <a class="btn site-menu" data-title-anchor="organisation"
+            >Organisation</a
+          >
+
+          <a class="btn site-menu" data-title-anchor="registration"
+            >Registration</a
+          >
+
+          <a class="btn site-menu" data-title-anchor="series">Series</a>
+
+          <i id="header-arrow" class="fa fa-angle-down"></i>
         </div>
-    </div>
-</header>
-<main class="content" role="main">
+      </div>
+    </header>
+    <main class="content" role="main">
+      <div class="fixed-nav"></div>
 
-    <div class='fixed-nav'>
-    </div>
-    
-        <div class='post-holder'>
-            <article id='welcome' class='post first '>
-                <header class="post-header">
-                    <h2 class="post-title">Welcome</h2>
-                </header>
-                <section class="post-content">
-                    <p>The Software Testing Education workshop (TestEd) will aim to identify and promote best practices in software testing education, including curriculum design, inclusivity, engagement, and industrial relevance. TestEd will feature different types of sessions and invite submissions at all educational levels.</p>
-<p>TestEd 2023 will focus on knowledge diffusion. The research community has created enormous amounts of knowledge on how to test software, yet many professional software engineers have little of this knowledge. This is despite the fact that testing is crucial to the success of all types of modern software products. On the other hand, the gap between software testing academia and industry demands/trends has not been narrowed. We will specifically focus on two goals. First, how can we teach more testing within computing degrees? Second, how can we better teach the knowledge and skills of software testing? Many members of the ICST community teach software testing at their universities. This workshop will allow those who teach testing to share their ideas, for those in industry to share their experiences and demands, and for us all to learn more about teaching software testing.</p>
+      <div class="post-holder">
+        <article id="welcome" class="post first">
+          <header class="post-header">
+            <h2 class="post-title">Welcome</h2>
+          </header>
+          <section class="post-content">
+            <p>
+              The Software Testing Education workshop (TestEd) will aim to
+              identify and promote best practices in software testing education,
+              including curriculum design, inclusivity, engagement, and
+              industrial relevance. TestEd will feature different types of
+              sessions and invite submissions at all educational levels.
+            </p>
+            <p>
+              TestEd 2023 will focus on knowledge diffusion. The research
+              community has created enormous amounts of knowledge on how to test
+              software, yet many professional software engineers have little of
+              this knowledge. This is despite the fact that testing is crucial
+              to the success of all types of modern software products. On the
+              other hand, the gap between software testing academia and industry
+              demands/trends has not been narrowed. We will specifically focus
+              on two goals. First, how can we teach more testing within
+              computing degrees? Second, how can we better teach the knowledge
+              and skills of software testing? Many members of the ICST community
+              teach software testing at their universities. This workshop will
+              allow those who teach testing to share their ideas, for those in
+              industry to share their experiences and demands, and for us all to
+              learn more about teaching software testing.
+            </p>
+          </section>
+        </article>
+        <div class="post-after"></div>
+      </div>
 
-                </section>
-            </article>
-            <div class='post-after'></div>
-        </div>
-    
-        <div class='post-holder'>
-            <article id='call-for-contributions' class='post  '>
-                <header class="post-header">
-                    <h2 class="post-title">Call for Contributions</h2>
-                </header>
-                <section class="post-content">
-                    <p>The Second International Software Testing Education Workshop (TestEd 2023), co-located with the 16th IEEE International Conference on Software Testing, Verification and Validation (ICST 2023), focuses on knowledge diffusion of software testing—especially promoting best practices in software testing education. The research community has created enormous amounts of knowledge for how to test software, yet many professional software engineers have little of this knowledge. This is despite the fact that testing is crucial to the success of all types of modern software products. We will specifically focus on two goals. First, how can we teach more testing within computing degrees? Second, how can we better teach the knowledge and skills of software testing? This workshop will give an opportunity for those who teach testing to share their ideas, for those in industry to share their experiences and demand, and for all of us to learn more about teaching software testing.</p>
-<h3 id="topics-and-types-of-contributions">Topics and types of contributions</h3>
-<p>Topics include—but are not limited to—teaching materials, active classroom exercises, theory vs. practice, how to solve classroom problems, how to teach specific skills (e.g., test design, test automation, etc.), how to teach students to think like a tester, and professional ethics. Shared experiences could come from courses at any level in academia or industry. It could also come from teaching a dedicated course in software testing or a software engineering course where testing is a small part. Our goal is to have a minimum of “talk at” and a maximum of “sharing with.” Hence, we are looking for multiple types of contributions, including traditional paper-based presentations, talks about specific strategies and tactics, and demonstrations of classroom activities and nifty assignments. We also welcome you to organize an activity such as a group discussion about tricks of the trade or an audience-focused panel to answer questions about teaching software testing. We accept:</p>
-<ul>
-<li>Full papers (6-8 pages, to be included in proceedings)</li>
-<li>Short papers (2-4 pages, to be included in proceedings)</li>
-<li>Talk proposals (1 page, not in proceedings)</li>
-<li>Demonstration activities and nifty assignments (1 page, not in proceedings)</li>
-<li>Panels and group discussion proposals (1 page, not in proceedings)</li>
-</ul>
-<h3 id="submission">Submission</h3>
-<p>Full and short papers must conform to the two columns IEEE conference publication format and must be submitted in PDF format via <a href="https://easychair.org/my/conference?conf=tested2023">EasyChair</a>. These submissions will be evaluated according to the relevance and originality of the work and to their ability to generate discussions between the participants of the workshop. Three reviewers will review each paper and all the accepted papers will be published as part of the ICST proceedings.</p>
-<p>Proposals for talks, demonstration activities and nifty assignments, discussions or other need not conform to the publication format but should be limited to one page, and submitted in PDF via EasyChair. These submissions will be evaluated according to several criteria, including novelty, potential for participants to learn, and maturity of the planned session. Three reviewers will evaluate each proposal. All materials for accepted contributions, including slides, summaries, and lesson plans, will be published on a public website.</p>
-<h3 id="important-dates">Important Dates</h3>
-<ul>
-<li>Paper submission: <del>27</del> 31 January 2023 AOE (<em>extended</em>)</li>
-<li>Notification: <del>17</del> 21 February 2023 (<em>extended with apologies to authors</em>)</li>
-<li>Camera-ready: 3 March 2023</li>
-<li>Workshop date: 16 April 2023</li>
-</ul>
-<h3 id="submission-site">Submission Site</h3>
-<p>Submissions must be uploaded on EasyChair: <a href="https://easychair.org/conferences/?conf=tested2023">https://easychair.org/conferences/?conf=tested2023</a></p>
+      <div class="post-holder">
+        <article id="program" class="post">
+          <header class="post-header">
+            <h2 class="post-title">Program</h2>
+          </header>
+          <section class="post-content">
+            <hr />
+            <h4>Keynote</h4>
+            <ul>
+              <li>
+                <div class="paper">Teaching Software Testing for Fun</div>
+                <div class="authors">Gordon Fraser</div>
+                <div class="abstract">
+                  Abstract: Teaching software testing can be hard: Students are
+                  not always enthusiastic about writing tests for their
+                  software, and even seasoned developers may struggle to find
+                  the motivation to write tests. In this talk I will report on
+                  my experiences and struggles in creating enthusiasm for
+                  testing, covering multiple different ways of course and
+                  content organisation explored over the years. Some of the key
+                  ingredients that emerged over time are a focus on practical
+                  experiences and gamification. We have implemented these using
+                  different approaches, in particular the Code Defenders game
+                  that turns mutation testing into a competitive and engaging
+                  game. While great for enthusiasm, playing games leads to
+                  followup challenges such as assessment, classroom management,
+                  or the burden of maintaining educational testing frameworks.
+                  Student feedback and course data, however, suggest that this
+                  is worthwhile.
+                </div>
+              </li>
+            </ul>
+            <h4>Session 1</h4>
+            <ul>
+              <li>
+                <div class="paper">
+                  Gamekins: Gamifying a Software Testing Course with Continuous
+                  Integration
+                </div>
+                <div class="authors">Philipp Straubinger</div>
+              </li>
+              <li>
+                <div class="paper">
+                  ISTQB-based Software Testing Education: Advantages and
+                  Challenges
+                </div>
+                <div class="authors">
+                  Attila Szatmári, Tamás Gergely, Árpád Beszédes
+                </div>
+              </li>
+              <li>
+                <div class="paper">
+                  On the Current State of Academic Software Testing Education in
+                  Sweden
+                </div>
+                <div class="authors">
+                  Ayodele Barrett, Eduard Paul Enoiu, Wasif Afzal
+                </div>
+              </li>
+            </ul>
+            <h4>Session 2</h4>
+            <ul>
+              <li>
+                <div class="paper">
+                  An Empirical Evaluation of Regular and Extreme Mutation
+                  Testing for Teaching Software Testing
+                </div>
+                <div class="authors">
+                  Martin Balfroid, Pierre Luycx, Benoît Vanderose, Xavier
+                  Devroey
+                </div>
+              </li>
+              <li>
+                <div class="paper">
+                  Teaching Test-Driven Development and Object-Oriented Design by
+                  Example
+                </div>
+                <div class="authors">Bingyang Wei</div>
+              </li>
+              <li>
+                <div class="paper">
+                  Process Oriented Guided Inquiry-based learning -like pedagogy
+                  (POGIL-like) in Online Software Testing and DevOps - A
+                  Replication Study
+                </div>
+                <div class="authors">Bhuvaneswari Gopal, Steve Cooper</div>
+              </li>
+            </ul>
+            <h4>Session 3</h4>
+            <ul>
+              <li>
+                <div class="paper">
+                  Intracompany Training in Software Testing: Experience Report
+                </div>
+                <div class="authors">
+                  Iosif Itkin, Natia Sirbiladze, Elena Treshcheva, Rostislav
+                  Yavorskiy
+                </div>
+              </li>
+              <li>
+                <div class="paper">Code Critters: A Block-Based Testing Game</div>
+                <div class="authors">
+                  Philipp Straubinger, Laura Caspari, Gordon Fraser
+                </div>
+              </li>
+              <li>
+                <div class="paper">
+                  ChatGPT and Software Testing Education: Promises & Perils
+                </div>
+                <div class="authors">
+                  Sajed Jalil, Suzzana Rafi, Thomas LaToza, Kevin Moran, Wing
+                  Lam
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+        <div class="post-after"></div>
+      </div>
 
-                </section>
-            </article>
-            <div class='post-after'></div>
-        </div>
-    
-        <div class='post-holder'>
-            <article id='organisation' class='post  '>
-                <header class="post-header">
-                    <h2 class="post-title">Organisation</h2>
-                </header>
-                <section class="post-content">
-                    <hr>
-<h4 id="organising-committee">Organising Committee</h4>
-<!-- raw HTML omitted -->
-<p><img src="images/lin.jpeg" alt="Lin Deng, Towson University, USA">
-Lin Deng, Towson University, USA</p>
-<p><img src="images/upsorn.jpeg" alt="Upsorn Praphamontripong">
-Upsorn Praphamontripong, University of Virginia, USA</p>
-<p><img src="images/jose.jpg" alt="José Miguel Rojas">
-José Miguel Rojas, The University of Sheffield, UK</p>
-<p><img src="images/bing.jpeg" alt="Bingyang Wei">
-Bingyang Wei, Texas Christian University, USA</p>
-<hr>
-<h4 id="program-committee">Program Committee</h4>
-<ul>
-<li>Renee Bryce, University of North Texas, USA</li>
-<li>Jeffrey C. Carver, University of Alabama, USA</li>
-<li>Matthew B Dwyer, University of Virginia, USA</li>
-<li>Michael Felderer, University of Innsbruck, Austria</li>
-<li>Gordon Fraser, University of Passau, Germany</li>
-<li>Jin Guo, Morgan State University, USA</li>
-<li>Robert Kurtz, George Mason University, USA</li>
-<li>Jeff Yu Lei, University of Texas at Arlington, USA</li>
-<li>Mercedes G. Merayo, Universidad Complutense de Madrid, Spain</li>
-<li>Manuel Nuñez, Universidad Complutense de Madrid, Spain</li>
-<li>Jeff Offutt, George Mason University, USA</li>
-<li>Mauro Pezze, USI Lugano &amp; Schaffhausen Institute of Technology, Switzerland</li>
-<li>Mary Lou Soffa, University of Virginia, USA</li>
-<li>Sara Sprenkle, Washington &amp; Lee University, USA</li>
-<li>Jeff Tian, Southern Methodist University, Dallas, USA</li>
-</ul>
+      <div class="post-holder">
+        <article id="call-for-contributions" class="post">
+          <header class="post-header">
+            <h2 class="post-title">Call for Contributions</h2>
+          </header>
+          <section class="post-content">
+            <p>
+              The Second International Software Testing Education Workshop
+              (TestEd 2023), co-located with the 16th IEEE International
+              Conference on Software Testing, Verification and Validation (ICST
+              2023), focuses on knowledge diffusion of software
+              testing—especially promoting best practices in software testing
+              education. The research community has created enormous amounts of
+              knowledge for how to test software, yet many professional software
+              engineers have little of this knowledge. This is despite the fact
+              that testing is crucial to the success of all types of modern
+              software products. We will specifically focus on two goals. First,
+              how can we teach more testing within computing degrees? Second,
+              how can we better teach the knowledge and skills of software
+              testing? This workshop will give an opportunity for those who
+              teach testing to share their ideas, for those in industry to share
+              their experiences and demand, and for all of us to learn more
+              about teaching software testing.
+            </p>
+            <h3 id="topics-and-types-of-contributions">
+              Topics and types of contributions
+            </h3>
+            <p>
+              Topics include—but are not limited to—teaching materials, active
+              classroom exercises, theory vs. practice, how to solve classroom
+              problems, how to teach specific skills (e.g., test design, test
+              automation, etc.), how to teach students to think like a tester,
+              and professional ethics. Shared experiences could come from
+              courses at any level in academia or industry. It could also come
+              from teaching a dedicated course in software testing or a software
+              engineering course where testing is a small part. Our goal is to
+              have a minimum of “talk at” and a maximum of “sharing with.”
+              Hence, we are looking for multiple types of contributions,
+              including traditional paper-based presentations, talks about
+              specific strategies and tactics, and demonstrations of classroom
+              activities and nifty assignments. We also welcome you to organize
+              an activity such as a group discussion about tricks of the trade
+              or an audience-focused panel to answer questions about teaching
+              software testing. We accept:
+            </p>
+            <ul>
+              <li>Full papers (6-8 pages, to be included in proceedings)</li>
+              <li>Short papers (2-4 pages, to be included in proceedings)</li>
+              <li>Talk proposals (1 page, not in proceedings)</li>
+              <li>
+                Demonstration activities and nifty assignments (1 page, not in
+                proceedings)
+              </li>
+              <li>
+                Panels and group discussion proposals (1 page, not in
+                proceedings)
+              </li>
+            </ul>
+            <h3 id="submission">Submission</h3>
+            <p>
+              Full and short papers must conform to the two columns IEEE
+              conference publication format and must be submitted in PDF format
+              via
+              <a href="https://easychair.org/my/conference?conf=tested2023"
+                >EasyChair</a
+              >. These submissions will be evaluated according to the relevance
+              and originality of the work and to their ability to generate
+              discussions between the participants of the workshop. Three
+              reviewers will review each paper and all the accepted papers will
+              be published as part of the ICST proceedings.
+            </p>
+            <p>
+              Proposals for talks, demonstration activities and nifty
+              assignments, discussions or other need not conform to the
+              publication format but should be limited to one page, and
+              submitted in PDF via EasyChair. These submissions will be
+              evaluated according to several criteria, including novelty,
+              potential for participants to learn, and maturity of the planned
+              session. Three reviewers will evaluate each proposal. All
+              materials for accepted contributions, including slides, summaries,
+              and lesson plans, will be published on a public website.
+            </p>
+            <h3 id="important-dates">Important Dates</h3>
+            <ul>
+              <li>
+                Paper submission: <del>27</del> 31 January 2023 AOE
+                (<em>extended</em>)
+              </li>
+              <li>
+                Notification: <del>17</del> 21 February 2023 (<em
+                  >extended with apologies to authors</em
+                >)
+              </li>
+              <li>Camera-ready: 3 March 2023</li>
+              <li>Workshop date: 16 April 2023</li>
+            </ul>
+            <h3 id="submission-site">Submission Site</h3>
+            <p>
+              Submissions must be uploaded on EasyChair:
+              <a href="https://easychair.org/conferences/?conf=tested2023"
+                >https://easychair.org/conferences/?conf=tested2023</a
+              >
+            </p>
+          </section>
+        </article>
+        <div class="post-after"></div>
+      </div>
 
-                </section>
-            </article>
-            <div class='post-after'></div>
-        </div>
-    
-        <div class='post-holder'>
-            <article id='registration' class='post  '>
-                <header class="post-header">
-                    <h2 class="post-title">Registration</h2>
-                </header>
-                <section class="post-content">
-                    <p>Stay tuned for registration information here and on the <a href="https://conf.researchr.org/home/icst-2023">ICST'23</a> website.</p>
+      <div class="post-holder">
+        <article id="organisation" class="post">
+          <header class="post-header">
+            <h2 class="post-title">Organisation</h2>
+          </header>
+          <section class="post-content">
+            <hr />
+            <h4 id="organising-committee">Organising Committee</h4>
+            <!-- raw HTML omitted -->
+            <p>
+              <img
+                src="images/lin.jpeg"
+                alt="Lin Deng, Towson University, USA"
+              />
+              Lin Deng, Towson University, USA
+            </p>
+            <p>
+              <img src="images/upsorn.jpeg" alt="Upsorn Praphamontripong" />
+              Upsorn Praphamontripong, University of Virginia, USA
+            </p>
+            <p>
+              <img src="images/jose.jpg" alt="José Miguel Rojas" /> José Miguel
+              Rojas, The University of Sheffield, UK
+            </p>
+            <p>
+              <img src="images/bing.jpeg" alt="Bingyang Wei" /> Bingyang Wei,
+              Texas Christian University, USA
+            </p>
+            <hr />
+            <h4 id="program-committee">Program Committee</h4>
+            <ul>
+              <li>Renee Bryce, University of North Texas, USA</li>
+              <li>Jeffrey C. Carver, University of Alabama, USA</li>
+              <li>Matthew B Dwyer, University of Virginia, USA</li>
+              <li>Michael Felderer, University of Innsbruck, Austria</li>
+              <li>Gordon Fraser, University of Passau, Germany</li>
+              <li>Jin Guo, Morgan State University, USA</li>
+              <li>Robert Kurtz, George Mason University, USA</li>
+              <li>Jeff Yu Lei, University of Texas at Arlington, USA</li>
+              <li>
+                Mercedes G. Merayo, Universidad Complutense de Madrid, Spain
+              </li>
+              <li>Manuel Nuñez, Universidad Complutense de Madrid, Spain</li>
+              <li>Jeff Offutt, George Mason University, USA</li>
+              <li>
+                Mauro Pezze, USI Lugano &amp; Schaffhausen Institute of
+                Technology, Switzerland
+              </li>
+              <li>Mary Lou Soffa, University of Virginia, USA</li>
+              <li>Sara Sprenkle, Washington &amp; Lee University, USA</li>
+              <li>Jeff Tian, Southern Methodist University, Dallas, USA</li>
+            </ul>
+          </section>
+        </article>
+        <div class="post-after"></div>
+      </div>
 
-                </section>
-            </article>
-            <div class='post-after'></div>
-        </div>
-    
-        <div class='post-holder'>
-            <article id='series' class='post  '>
-                <header class="post-header">
-                    <h2 class="post-title">Series</h2>
-                </header>
-                <section class="post-content">
-                    <p><a href="https://testedworkshop.github.io/">https://testedworkshop.github.io/</a></p>
-<h4 id="past-editions">Past Editions</h4>
-<p><a href="https://testedworkshop.github.io/2020">1st TestEd Workshop</a>, co-located with ICST 2020</p>
+      <div class="post-holder">
+        <article id="registration" class="post">
+          <header class="post-header">
+            <h2 class="post-title">Registration</h2>
+          </header>
+          <section class="post-content">
+            <p>
+              Stay tuned for registration information here and on the
+              <a href="https://conf.researchr.org/home/icst-2023">ICST'23</a>
+              website.
+            </p>
+          </section>
+        </article>
+        <div class="post-after"></div>
+      </div>
 
-                </section>
-            </article>
-            <div class='post-after'></div>
-        </div>
-    
-        <div class='post-holder'>
-            <article id='contact' class='post  last'>
-                <header class="post-header">
-                    <h2 class="post-title">Contact</h2>
-                </header>
-                <section class="post-content">
-                    <h5 id="the-organisers">The Organisers</h5>
-<p><i class="fa fa-envelope"></i> <a href="mailto:workshoptested@gmail.com">workshoptested@gmail.com</a></p>
-<p>Let us get in touch!</p>
+      <div class="post-holder">
+        <article id="series" class="post">
+          <header class="post-header">
+            <h2 class="post-title">Series</h2>
+          </header>
+          <section class="post-content">
+            <p>
+              <a href="https://testedworkshop.github.io/"
+                >https://testedworkshop.github.io/</a
+              >
+            </p>
+            <h4 id="past-editions">Past Editions</h4>
+            <p>
+              <a href="https://testedworkshop.github.io/2020"
+                >1st TestEd Workshop</a
+              >, co-located with ICST 2020
+            </p>
+          </section>
+        </article>
+        <div class="post-after"></div>
+      </div>
 
-                </section>
-            </article>
-            <div class='post-after'></div>
-        </div>
-    
-</main>
-<footer class="site-footer">
-  <div class="inner">
-    
-      <section class="copyright">© TestEd Workshop</section>
+      <div class="post-holder">
+        <article id="contact" class="post last">
+          <header class="post-header">
+            <h2 class="post-title">Contact</h2>
+          </header>
+          <section class="post-content">
+            <h5 id="the-organisers">The Organisers</h5>
+            <p>
+              <i class="fa fa-envelope"></i> <a
+                href="mailto:workshoptested@gmail.com"
+                >workshoptested@gmail.com</a
+              >
+            </p>
+            <p>Let us get in touch!</p>
+          </section>
+        </article>
+        <div class="post-after"></div>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="inner">
+        <section class="copyright">© TestEd Workshop</section>
 
-    
-      Cover photo by <a href="https://unsplash.com/@gregda">Gregory DALLEAU</a>
-    
+        Cover photo by
+        <a href="https://unsplash.com/@gregda">Gregory DALLEAU</a>
 
-    <section></section>
-    
-      <section>
-        <a href="https://themes.gohugo.io/hugo-scroll/">Design</a> template
-        built with ♥️ by
-        <a href="https://www.janraasch.com" title="Jan Raasch">Jan Raasch</a>
-      </section>
+        <section></section>
 
-  </div>
-</footer>
+        <section>
+          <a href="https://themes.gohugo.io/hugo-scroll/">Design</a> template
+          built with ♥️ by
+          <a href="https://www.janraasch.com" title="Jan Raasch">Jan Raasch</a>
+        </section>
+      </div>
+    </footer>
 
-    <script type="text/javascript" src='https://testedworkshop.github.io/2023/js/jquery-3.6.0.min.js'></script>
+    <script
+      type="text/javascript"
+      src="https://testedworkshop.github.io/2023/js/jquery-3.6.0.min.js"
+    ></script>
 
-    
-    <script type="text/javascript" src='https://testedworkshop.github.io/2023/js/icons.js'></script>
-    <script type="text/javascript" src='https://testedworkshop.github.io/2023/js/index.js'></script>
-    
-</body>
+    <script
+      type="text/javascript"
+      src="https://testedworkshop.github.io/2023/js/icons.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://testedworkshop.github.io/2023/js/index.js"
+    ></script>
+  </body>
 </html>
